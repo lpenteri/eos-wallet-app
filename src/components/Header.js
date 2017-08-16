@@ -17,7 +17,7 @@ class Header extends Component {
 			<header className={className}>
 				<div>
 					<Icon className={styles.icon} />
-					<h1>EOS</h1>
+                    <img className="logo" src="images/logo.svg" />
 				</div>
 				<User />
 			</header>
