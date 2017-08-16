@@ -7,6 +7,9 @@
     overflow: visible;
     width: 100%;
     flex: 1 0 100%;
+    .logo {
+        height: 55px;
+    }
     .meta {
         position: absolute;
         top: 1.25rem;
