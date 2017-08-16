@@ -3,7 +3,7 @@ import Link from './Link'
 
 class Footer extends Component {
 	static defaultProps = {
-		className: 'Nav row no-gutters px-4 items-center space-between bg-dark-grey'
+		className: 'Nav row no-gutters items-center space-between'
 	}
 
 	render() {
