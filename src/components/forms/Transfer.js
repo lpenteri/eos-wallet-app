@@ -18,8 +18,11 @@ class TransferForm extends Component {
 	}
 
 	onChange(e) {
-		const name = e.target.name
-		const value = e.target.value
+    const {name, pattern, value} = e.target
+
+    if (pattern && !(new RegExp(pattern).test(value))) {
+      return
+    }
 
 		this.setState({ [name]: value })
 	}
@@ -54,7 +57,7 @@ class TransferForm extends Component {
 					<label htmlFor="amount">Amount</label>
 					<input
 						required
-						pattern="\d*"
+						pattern="^[0-9.]*$"
 						type="text"
 						className="form-control form-control-lg"
 						id="amount"
