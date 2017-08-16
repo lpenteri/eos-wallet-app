@@ -6,8 +6,13 @@ class SearchForm extends Component {
 	render() {
 		return (
 			<form>
-				<fieldset>
-					<input type="text" />
+				<fieldset className="form-group">
+					<input
+						required
+						type="text"
+						className="form-control form-control-lg"
+						name="search"
+						aria-describedby="search"></input>
 				</fieldset>
 			</form>
 		)
