@@ -4,21 +4,23 @@ import {List, Icon} from '../components'
 import TransactionsQuery from '../query/transactions'
 
 const Transaction = ({ date, sender, memo, amount }) => (
-	<div className="-list-item -transaction">
-		<div className="-transaction-left">
+	<div className="-list-item -transaction d-flex flex-row">
+		<div className="-transaction-left d-flex flex-row">
 			<div className="-transaction-date">
-				<p>{date.month}</p>
-				<p>{date.day}</p>
+				<div className="date-month">{date.month}</div>
+				<div className="date-day">{date.day}</div>
 			</div>
 
-			<Icon url={sender.icon} />
+			<Icon className="-thumbnail" url={sender.icon} />
 
-			<p className="-transaction-memo">{memo}</p>
+			<div className="-transaction-memo">
+                <p>{memo}</p>
+            </div>
 		</div>
 
-		<div className="-transaction-amount-container">
-			<p className="-transaction-amount">{amount}</p>
-			<Icon />
+		<div className="-transaction-amount-container d-flex flex-row-reverse">
+			<Icon className="-transaction-icon icon-eos_icons_transfer_to" />
+            <p className="-transaction-amount">{amount}</p>
 		</div>
 	</div>
 )
