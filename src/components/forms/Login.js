@@ -58,7 +58,7 @@ class Login extends Component {
 					<input type="checkbox" />
 				</fieldset>
 
-				<button type="submit">Login</button>
+				<button type="submit" className="btn btn-primary btn-lg">Submit</button>
 			</form>
 		)
 	}
