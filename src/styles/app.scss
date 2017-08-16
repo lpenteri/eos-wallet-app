@@ -1,14 +1,18 @@
 .app {
 	min-height: 100vh;
+	padding: 0 !important;
 	display: flex;
 	flex: 1;
-	padding: 0 !important;
+  align-items: stretch;
+  flex-direction: column;
 }
 
 .main-content {
     float: left;
     width: calc(100% - 275px);
     padding: 2rem 2.5rem;
+    flex: 1 0 auto;
+
     ul {
         padding-left: 0;
         list-style-type: none;
