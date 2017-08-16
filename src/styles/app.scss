@@ -5,21 +5,6 @@
 	padding: 0 !important;
 }
 
-.app-logo {
-    height: 80px;
-}
-
-.app-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
-.app-intro {
-    font-size: large;
-}
-
 .main-content {
     float: left;
     width: calc(100% - 275px);
@@ -54,75 +39,6 @@
             font-size: 90%;
             font-weight: 200;
             line-height: 1.75em;
-        }
-    }
-}
-
-.-transaction {
-    .-transaction-left {
-        width: calc(100% - 160px);
-    }
-    .-transaction-date {
-        text-align: center;
-        .date-month {
-            font-size: 80%;
-            text-transform: uppercase;
-            font-weight: 200;
-        }
-        .date-day {
-            font-size: 130%;
-            font-weight: 200;
-            line-height: 90%;
-        }
-    }
-    .-thumbnail {
-        width: 40px;
-        height: 40px;
-        border: 3px solid $orange;
-        @include border-radius(20px);;
-        margin-left: 20px;
-    }
-    .-transaction-memo {
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        min-height: 40px;
-        p {
-            margin: 0;
-        }
-    }
-    .-transaction-amount-container {
-        width: 160px;
-        text-align: right;
-        .-transaction-icon {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            min-height: 40px;
-            margin-left: 5px;
-            font-size: 80%
-        }
-        .-transaction-amount {
-            margin-bottom: 0;
-            font-size: 120%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            min-height: 40px;
-        }
-        .-transaction-date {
-            text-align: center;
-            .date-month {
-                font-size: 80%;
-                text-transform: uppercase;
-                font-weight: 200;
-            }
-            .date-day {
-                font-size: 130%;
-                font-weight: 200;
-                line-height: 90%;
-            }
         }
     }
 }
