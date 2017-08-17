@@ -7,7 +7,6 @@ import {
 import {
 	About,
 	Faqs,
-	Home,
 	NoMatch,
 	Permissions,
 	Preferences,
@@ -33,22 +32,20 @@ class App extends Component {
 		return (
 			<main className={className}>
 				<Header />
-        <div className="flex-fill">
-          <Navbar />
-          <Scene>
-            <Route exact path="/" component={Home} />
-            <Route path="/transfer" component={Transfer} />
-            <Route path="/transactions" component={TransactionHistory} />
-            <Route path="/permissions" component={Permissions} />
-            <Route path="/user/:id" component={Profile} />
-            <Route path="/about" component={About} />
-            <Route path="/faqs" component={Faqs} />
-            <Route path="/users" component={Users} />
-            <Route path="/preferences" component={Preferences} />
-            <Route path="*" component={NoMatch} />
-            <Footer />
-          </Scene>
-        </div>
+				<Navbar />
+				<Scene>
+					<Route exact path="/" component={Transfer} />
+					<Route path="/transfer" component={Transfer} />
+					<Route path="/transactions" component={TransactionHistory} />
+					<Route path="/permissions" component={Permissions} />
+					<Route path="/user/:id" component={Profile} />
+					<Route path="/about" component={About} />
+					<Route path="/faqs" component={Faqs} />
+					<Route path="/users" component={Users} />
+					<Route path="/preferences" component={Preferences} />
+					<Route path="*" component={NoMatch} />
+					<Footer />
+				</Scene>
 			</main>
 		)
 	}
