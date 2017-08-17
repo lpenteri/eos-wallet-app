@@ -6,6 +6,8 @@
   "parser": "babel-eslint",
   "rules": {
     "strict": 0,
+    "no-undef": 1,
+    "no-unused-vars": 1,
     "comma-daggle": 0,
     "sort-imports": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
