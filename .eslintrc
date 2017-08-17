@@ -1,13 +1,8 @@
 {
-  "extends": "standard",
+  "extends": ["eslint:all", "plugin:react/all", "standard"],
   "plugins": [
     "react"
   ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
   "parser": "babel-eslint",
   "rules": {
     "strict": 0
