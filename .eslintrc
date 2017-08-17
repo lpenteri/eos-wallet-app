@@ -1,0 +1,10 @@
+{
+  "extends": ["eslint:all", "plugin:react/all", "standard"],
+  "plugins": [
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0
+  }
+}
