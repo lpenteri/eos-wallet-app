@@ -57,20 +57,22 @@ class TransferForm extends Component {
        </fieldset>
 
        <fieldset className="form-group">
-         <label htmlFor="amount">Amount</label>
-         <input
-           aria-describedby="amount"
-           className="form-control form-control-lg"
-           id="amount"
-           name="amount"
-           onChange={onChange}
-           pattern="^[0-9.]*$"
-           required
-           type="text"
-           value={amount}
-         />
+         <div>
+           <small className="form-text text-muted"><a>Balance: {balance} EOS</a></small>
 
-         <small className="form-text text-muted"><a>Balance: {balance} EOS</a></small>
+           <label htmlFor="amount">Amount</label>
+           <input
+             aria-describedby="amount"
+             className="form-control form-control-lg"
+             id="amount"
+             name="amount"
+             onChange={onChange}
+             pattern="^[0-9.]*$"
+             required
+             type="text"
+             value={amount}
+           />
+         </div>
        </fieldset>
 
        <fieldset className="form-group">
@@ -81,7 +83,6 @@ class TransferForm extends Component {
            id="memo"
            name="memo"
            onChange={onChange}
-           placeholder="Memo here"
            type="text"
            value={memo}
          />
