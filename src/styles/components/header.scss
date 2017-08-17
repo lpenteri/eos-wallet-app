@@ -30,13 +30,15 @@
         position: absolute;
         top: 1.25rem;
         right: 1.25rem;
-        width: 100px;
-        height: 100px;
-        border: 8px solid $orange;
-        @include border-radius(50px);
+        .user-thumbnail {
+            width: 100px;
+            height: 100px;
+            border: 8px solid $orange;
+            @include border-radius(50px);
+        }
         .settings {
             position: absolute;
-            top: 45px;
+            top: 54px;
             left: -15px;
             width: 30px;
             height: 30px;
