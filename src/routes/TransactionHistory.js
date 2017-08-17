@@ -6,9 +6,17 @@ class TransactionHistory extends Component {
 		return (
 			<div>
                 <div className="container-full">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="d-flex justify-content-end">
+                        <div className="mr-auto align-self-center">
                             <h2>Transaction History</h2>
+                        </div>
+                        <div className="align-self-center">
+                          <div className="export icon-eos_icons_export"></div>
+                        </div>
+                        <div className="align-self-center">
+                            <div className="module-search">
+                              <input type="text" className="form-control"></input>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
