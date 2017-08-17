@@ -3,94 +3,102 @@ import React, {Component} from 'react'
 // import mutation
 
 class TransferForm extends Component {
-	static defaultProps = {
-		balance: '0.000'
-	}
+ static defaultProps = {
+   balance: '0.000'
+ }
 
-	constructor(props, context) {
-		super(props, context)
+ constructor (props, context) {
+   super(props, context)
 
-		this.state = {
-			amount: 0,
-			emailAddress: '',
-			memo: '',
-		}
-	}
+   this.state = {
+     amount: 0,
+     emailAddress: '',
+     memo: ''
+   }
+ }
 
-	onChange(e) {
-    const {name, pattern, value} = e.target
+ onChange (e) {
+   const {name, pattern, value} = e.target
 
-    if (pattern && !(new RegExp(pattern).test(value))) {
-      return
-    }
+   if (pattern && !(new RegExp(pattern).test(value))) {
+     return
+   }
 
-		this.setState({ [name]: value })
-	}
+   this.setState({ [name]: value })
+ }
 
-	clearInputs() {
-		this.setState({
-			amount: '',
-			emailAddress: '',
-			memo: '',
-		})
-	}
+ clearInputs () {
+   this.setState({
+     amount: '',
+     emailAddress: '',
+     memo: ''
+   })
+ }
 
-	render() {
-		const {amount, emailAddress, memo,} = this.state
-		const {balance} = this.props
+ render () {
+   const {amount, emailAddress, memo} = this.state
+   const {balance} = this.props
 
-		return (
-			<form>
-				<fieldset className="form-group">
-					<label htmlFor="to">To</label>
-					<input
-						type="email"
-						className="form-control form-control-lg"
-						id="to"
-						name="emailAddress"
-						value={emailAddress}
-						onChange={this.onChange.bind(this)}
-						aria-describedby="to"></input>
-				</fieldset>
+   return (
+     <form>
+       <fieldset className="form-group">
+         <label htmlFor="to">To</label>
+         <input
+           aria-describedby="to"
+           className="form-control form-control-lg"
+           id="to"
+           name="emailAddress"
+           onChange={this.onChange.bind(this)}
+           type="email"
+           value={emailAddress}
+         />
+       </fieldset>
 
-				<fieldset className="form-group">
-					<label htmlFor="amount">Amount</label>
-					<input
-						required
-						pattern="^[0-9.]*$"
-						type="text"
-						className="form-control form-control-lg"
-						id="amount"
-						name="amount"
-						value={amount}
-						onChange={this.onChange.bind(this)}
-						aria-describedby="amount"></input>
+       <fieldset className="form-group">
+         <label htmlFor="amount">Amount</label>
+         <input
+           aria-describedby="amount"
+           className="form-control form-control-lg"
+           id="amount"
+           name="amount"
+           onChange={this.onChange.bind(this)}
+           pattern="^[0-9.]*$"
+           required
+           type="text"
+           value={amount}
+         />
 
-					<small className="form-text text-muted"><a>Balance: {balance} EOS</a></small>
-				</fieldset>
+         <small className="form-text text-muted"><a>Balance: {balance} EOS</a></small>
+       </fieldset>
 
-				<fieldset className="form-group">
-					<label htmlFor="memo">Memo</label>
-					<input
-						type="text"
-						className="form-control form-control-lg"
-						id="memo"
-						name="memo"
-						value={memo}
-						onChange={this.onChange.bind(this)}
-						aria-describedby="emailHelp"
-						placeholder="Memo here"></input>
-				</fieldset>
+       <fieldset className="form-group">
+         <label htmlFor="memo">Memo</label>
+         <input
+           aria-describedby="emailHelp"
+           className="form-control form-control-lg"
+           id="memo"
+           name="memo"
+           onChange={this.onChange.bind(this)}
+           placeholder="Memo here"
+           type="text"
+           value={memo}
+         />
+       </fieldset>
 
-				<button type="submit" className="btn btn-primary btn-lg">Submit</button>
-				<button
-					type="button"
-					onClick={this.clearInputs.bind(this)}
-					className="btn btn-secondary btn-lg">Clear</button>
-			</form>
-		)
-	}
+       <button
+         className="btn btn-primary btn-lg"
+         type="submit"
+       >Submit
+       </button>
+       <button
+         className="btn btn-secondary btn-lg"
+         onClick={this.clearInputs.bind(this)}
+         type="button"
+       >Clear
+       </button>
+     </form>
+   )
+ }
 }
 
 export default TransferForm
-

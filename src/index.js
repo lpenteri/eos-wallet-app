@@ -12,11 +12,10 @@ import './styles/index.scss'
 const history = createHistory()
 
 ReactDOM.render(
-	<Router history={history}>
-		<App />
-	</Router>,
-	document.getElementById('root')
+  <Router history={history}>
+    <App />
+  </Router>,
+  document.getElementById('root')
 )
 
 registerServiceWorker()
-
