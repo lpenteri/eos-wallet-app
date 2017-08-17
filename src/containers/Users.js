@@ -4,16 +4,20 @@ import UsersQuery from '../query/users'
 import {observer} from 'mobx-react'
 
 const User = ({ url, name, status, icon }) => (
-  <Link to={url}>
-    <Icon
-      className="transaction-thumbnail"
-      url={icon}
-    />
-    <div>
-      <p>{name}</p>
-      <p>{status}</p>
-    </div>
-  </Link>
+  <div className="user transaction">
+    <Link to={url}>
+      <div className="user-meta d-flex flex-row">
+        <Icon
+          className="transaction-thumbnail"
+          url={icon}
+        />
+        <div className="user-info">
+          <div className="user-name">{name}Demo Name</div>
+          <div className="user-memo">{status}</div>
+        </div>
+      </div>
+    </Link>
+  </div>
 )
 
 class Users extends Component {
