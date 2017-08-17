@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import {Users as UsersContainer} from '../containers'
+import React, { Component } from 'react';
+import { Users as UsersContainer } from '../containers';
 
 class Users extends Component {
-  render () {
+  render() {
     return (
       <div>
         <div className="container-full">
@@ -26,8 +26,8 @@ class Users extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Users
+export default Users;

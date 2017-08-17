@@ -4,93 +4,93 @@ const TransactionHistory = [
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
+    memo: 'My Picture challenge',
   },
   {
     sender: {
       name: 'Brian Dawson',
-      icon: 'url'
+      icon: 'url',
     },
     amount: '1000',
     date: 'July 25',
-    memo: 'My Picture challenge'
-  }
-]
+    memo: 'My Picture challenge',
+  },
+];
 
-export default TransactionHistory
+export default TransactionHistory;

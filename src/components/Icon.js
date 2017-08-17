@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Icon = ({
   className,
   alt = 'Image',
   url,
   style = {
-    icon: '-icon-class'
-  }}) => (
+    icon: '-icon-class',
+  } }) => (
   <div className={className}>
     <i
       aria-label={alt}
@@ -14,6 +14,6 @@ const Icon = ({
       style={{ backgroundImage: `url(${url})` }}
     />
   </div>
-)
+);
 
-export default Icon
+export default Icon;

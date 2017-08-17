@@ -1,27 +1,27 @@
-import React, {Component} from 'react'
-import Link from './Link'
+import React, { Component } from 'react';
+import Link from './Link';
 import {
   Balance,
-  List
-} from './'
+  List,
+} from './';
 
 const NavLink = ({
   className = 'col-link p3',
   text,
-  ...props}) => (
+  ...props }) => (
   <Link
     className={className}
     {...props}
   >
     {text}
   </Link>
-)
+);
 
 const UserLink = ({
   className = 'col-link p3',
   iconClass,
   text,
-  ...props}) => (
+  ...props }) => (
   <Link
     className={className}
     {...props}
@@ -29,7 +29,7 @@ const UserLink = ({
     <span className={iconClass} />
     {text}
   </Link>
-)
+);
 
 class Navbar extends Component {
  static defaultProps = {
@@ -37,23 +37,23 @@ class Navbar extends Component {
    styles: {
      list: 'navbar-links',
      userActions: '-is-logged-in',
-     userActionsList: '-links'
+     userActionsList: '-links',
    },
    userActions: [
      { to: '/transfer', text: 'Transfer', iconClass: 'icon-eos_icons_transfer' },
      { to: '/transactions', text: 'Transaction History', iconClass: 'icon-eos_icons_history' },
-     { to: '/permissions', text: 'Permissions', iconClass: 'icon-eos_icons_permissions' }
+     { to: '/permissions', text: 'Permissions', iconClass: 'icon-eos_icons_permissions' },
    ],
    links: [
      { to: '/users', text: 'Users' },
      { to: '/about', text: 'About' },
      { to: '/user/2', text: 'Users' },
-     { to: '/faq', text: 'FAQ' }
-   ]
+     { to: '/faq', text: 'FAQ' },
+   ],
  }
 
- render () {
-   const {className, links, styles, userActions} = this.props
+ render() {
+   const { className, links, styles, userActions } = this.props;
 
    return (
      <nav className={className}>
@@ -72,8 +72,8 @@ class Navbar extends Component {
          renderItem={NavLink}
        />
      </nav>
-   )
+   );
  }
 }
 
-export default Navbar
+export default Navbar;

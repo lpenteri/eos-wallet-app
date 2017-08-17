@@ -1,45 +1,45 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 // import validation
 // import mutation
 
 class TransferForm extends Component {
  static defaultProps = {
-   balance: '0.000'
+   balance: '0.000',
  }
 
- constructor (props, context) {
-   super(props, context)
+ constructor(props, context) {
+   super(props, context);
 
    this.state = {
      amount: 0,
      emailAddress: '',
-     memo: ''
-   }
+     memo: '',
+   };
  }
 
- onChange (e) {
-   const {name, pattern, value} = e.target
+ onChange(e) {
+   const { name, pattern, value } = e.target;
 
    if (pattern && !(new RegExp(pattern).test(value))) {
-     return
+     return;
    }
 
-   this.setState({ [name]: value })
+   this.setState({ [name]: value });
  }
 
- clearInputs () {
+ clearInputs() {
    this.setState({
      amount: '',
      emailAddress: '',
-     memo: ''
-   })
+     memo: '',
+   });
  }
 
- render () {
-   const {amount, emailAddress, memo} = this.state
-   const {balance} = this.props
-   const onChange = this.onChange.bind(this)
-   const clearInputs = this.clearInputs.bind(this)
+ render() {
+   const { amount, emailAddress, memo } = this.state;
+   const { balance } = this.props;
+   const onChange = this.onChange.bind(this);
+   const clearInputs = this.clearInputs.bind(this);
 
    return (
      <form>
@@ -100,8 +100,8 @@ class TransferForm extends Component {
        >Clear
        </button>
      </form>
-   )
+   );
  }
 }
 
-export default TransferForm
+export default TransferForm;

@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
-import {Route} from 'react-router'
+import React, { Component } from 'react';
+import { Route } from 'react-router';
 import {
   Header,
   Footer,
-  Navbar} from '../components'
+  Navbar } from '../components';
 import {
   About,
   Faqs,
@@ -13,27 +13,27 @@ import {
   Profile,
   TransactionHistory,
   Transfer,
-  Users} from '../routes'
+  Users } from '../routes';
 
 const Scene = ({
   children,
   className = 'main-content',
-  ...props}) => (
+  ...props }) => (
   <div
     className={className}
     {...props}
   >
     {children}
   </div>
-)
+);
 
 class App extends Component {
   static defaultProps = {
-    className: 'app container-fluid p-0 row no-gutters d-flex'
+    className: 'app container-fluid p-0 row no-gutters d-flex',
   }
 
-  render () {
-    const {className} = this.props
+  render() {
+    const { className } = this.props;
 
     return (
       <main className={className}>
@@ -86,8 +86,8 @@ class App extends Component {
           </Scene>
         </div>
       </main>
-    )
+    );
   }
 }
 
-export default App
+export default App;

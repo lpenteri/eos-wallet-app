@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import Transactions from '../containers/Transactions'
+import React, { Component } from 'react';
+import Transactions from '../containers/Transactions';
 
 class TransactionHistory extends Component {
-  render () {
+  render() {
     return (
       <div>
         <div className="container-full">
@@ -29,8 +29,8 @@ class TransactionHistory extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default TransactionHistory
+export default TransactionHistory;

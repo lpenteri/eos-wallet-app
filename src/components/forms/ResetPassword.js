@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 // import validation
 // import mutation
 
 class ResetPassword extends Component {
-  render () {
+  render() {
     return (
       <form>
         <fieldset className="form-group">
@@ -34,8 +34,8 @@ class ResetPassword extends Component {
         >Submit
         </button>
       </form>
-    )
+    );
   }
 }
 
-export default ResetPassword
+export default ResetPassword;

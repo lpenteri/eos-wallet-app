@@ -1,30 +1,30 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 // import validation
 // import mutation
 
 class Login extends Component {
-  constructor (props, context) {
-    super(props, context)
+  constructor(props, context) {
+    super(props, context);
 
     this.state = {
       username: '',
-      password: ''
-    }
+      password: '',
+    };
   }
 
-  onChange (e) {
-    const {name, value, pattern} = e.target
+  onChange(e) {
+    const { name, value, pattern } = e.target;
 
     if (pattern && !(new RegExp(pattern)).test(value)) {
-      return
+      return;
     }
 
-    this.setState({ [name]: value })
+    this.setState({ [name]: value });
   }
 
-  render () {
-    const {username, password} = this.props
-    const onChange = this.onChange.bind(this)
+  render() {
+    const { username, password } = this.props;
+    const onChange = this.onChange.bind(this);
 
     return (
       <form>
@@ -57,8 +57,8 @@ class Login extends Component {
         </fieldset>
 
         <fieldset>
-          <label>Keep me logged in</label>
-          <input type="checkbox" />
+          <label htmlFor="keepLoggedIn">Keep me logged in</label>
+          <input name="keepLoggedIn" type="checkbox" />
         </fieldset>
 
         <button
@@ -67,8 +67,8 @@ class Login extends Component {
         >Submit
         </button>
       </form>
-    )
+    );
   }
 }
 
-export default Login
+export default Login;

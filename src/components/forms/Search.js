@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 // import validation
 // import mutation
 
 class SearchForm extends Component {
-  render () {
+  render() {
     return (
       <form>
         <fieldset className="form-group">
@@ -16,8 +16,8 @@ class SearchForm extends Component {
           />
         </fieldset>
       </form>
-    )
+    );
   }
 }
 
-export default SearchForm
+export default SearchForm;
