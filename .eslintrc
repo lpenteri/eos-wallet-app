@@ -1,11 +1,26 @@
 {
-  "extends": ["eslint:all", "plugin:react/all", "standard"],
+  "extends": ["plugin:react/all", "standard"],
   "plugins": [
     "react"
   ],
   "parser": "babel-eslint",
   "rules": {
     "strict": 0,
-    "comma-daggle": 0
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "comma-daggle": 0,
+    "sort-imports": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/require-optimization": 1,
+    "react/prefer-stateless-function": 1,
+    "react/jsx-no-literals": 0,
+    "react/prop-types": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/no-multi-comp": 1,
+    "react/forbid-component-props": 1,
+    "react/no-set-state": 0,
+    "react/no-unused-state": 0,
+    "react/jsx-no-bind": 1
   }
 }

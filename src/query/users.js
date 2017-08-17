@@ -77,9 +77,8 @@ const UsersQuery = () => (
       'icon': 'url',
       'username': 'Brian Dawson',
       'url': ''
-    },
+    }
   ]
 )
 
 export default UsersQuery
-
