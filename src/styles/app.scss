@@ -57,13 +57,13 @@
       content: "@";
       color: $dark-grey;
       text-align: center;
-      line-height: 3rem;
+      line-height: 3.25rem;
       font-size: 110%;
       position: absolute;
       left: 1px;
       top: 1px;
       width: 50px;
-      height: 49px;
+      height: 52px;
       background-color: $light-grey;
       @include border-radius(0.25rem 0 0 0.25rem);
     }

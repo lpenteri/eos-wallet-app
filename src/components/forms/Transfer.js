@@ -45,21 +45,22 @@ class TransferForm extends Component {
      <form>
        <fieldset className="form-group">
          <label htmlFor="to">To</label>
-         <input
-           aria-describedby="to"
-           className="form-control form-control-lg"
-           id="to"
-           name="emailAddress"
-           onChange={onChange}
-           type="email"
-           value={emailAddress}
-         />
+         <div className="input-prefix">
+           <input
+             aria-describedby="to"
+             className="form-control form-control-lg prefix"
+             id="to"
+             name="emailAddress"
+             onChange={onChange}
+             type="text"
+             value={emailAddress}
+           />
+         </div>
        </fieldset>
 
        <fieldset className="form-group">
          <div>
            <small className="form-text text-muted"><a>Balance: {balance} EOS</a></small>
-
            <label htmlFor="amount">Amount</label>
            <input
              aria-describedby="amount"
