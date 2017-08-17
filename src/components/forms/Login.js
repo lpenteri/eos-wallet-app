@@ -24,6 +24,7 @@ class Login extends Component {
 
   render () {
     const {username, password} = this.props
+    const onChange = this.onChange.bind(this)
 
     return (
       <form>
@@ -34,7 +35,7 @@ class Login extends Component {
             className="form-control form-control-lg"
             id="username"
             name="username"
-            onChange={this.onChange.bind(this)}
+            onChange={onChange}
             required
             type="text"
             value={username}
@@ -48,7 +49,7 @@ class Login extends Component {
             className="form-control form-control-lg"
             id="password"
             name="password"
-            onChange={this.onChange.bind(this)}
+            onChange={onChange}
             required
             type="text"
             value={password}

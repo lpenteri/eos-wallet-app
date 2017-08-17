@@ -38,6 +38,8 @@ class TransferForm extends Component {
  render () {
    const {amount, emailAddress, memo} = this.state
    const {balance} = this.props
+   const onChange = this.onChange.bind(this)
+   const clearInputs = this.clearInputs.bind(this)
 
    return (
      <form>
@@ -48,7 +50,7 @@ class TransferForm extends Component {
            className="form-control form-control-lg"
            id="to"
            name="emailAddress"
-           onChange={this.onChange.bind(this)}
+           onChange={onChange}
            type="email"
            value={emailAddress}
          />
@@ -61,7 +63,7 @@ class TransferForm extends Component {
            className="form-control form-control-lg"
            id="amount"
            name="amount"
-           onChange={this.onChange.bind(this)}
+           onChange={onChange}
            pattern="^[0-9.]*$"
            required
            type="text"
@@ -78,7 +80,7 @@ class TransferForm extends Component {
            className="form-control form-control-lg"
            id="memo"
            name="memo"
-           onChange={this.onChange.bind(this)}
+           onChange={onChange}
            placeholder="Memo here"
            type="text"
            value={memo}
@@ -92,7 +94,7 @@ class TransferForm extends Component {
        </button>
        <button
          className="btn btn-secondary btn-lg"
-         onClick={this.clearInputs.bind(this)}
+         onClick={clearInputs}
          type="button"
        >Clear
        </button>
