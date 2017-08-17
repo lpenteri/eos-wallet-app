@@ -8,6 +8,8 @@
     "strict": 0,
     "comma-daggle": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/require-optimization": 1
+    "react/require-optimization": 1,
+    "react/prefer-stateless-function": 1,
+    "react/jsx-no-literals": 0
   }
 }
