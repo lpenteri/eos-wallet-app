@@ -23,6 +23,7 @@ const User = ({
     <div className="account-info">
         <div className="thumbnail">
             <div className="settings icon-eos_icons_settings"></div>
+            <img className="user-thumbnail" src="images/male_2.jpg" />
         </div>
 	   <div className={className}>
 
