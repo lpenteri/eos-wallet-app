@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import {observer} from 'mobx-react'
+import React, { Component } from 'react';
+import { observer } from 'mobx-react';
 
 class Balance extends Component {
  static defaultProps = {
@@ -7,19 +7,19 @@ class Balance extends Component {
    styles: {
      primary: 'nav-primary',
      balance: 'balance',
-     change: 'change'
+     change: 'change',
    },
    account: {
      value: {
-       belongsTo: ['My', '']
+       belongsTo: ['My', ''],
      },
      formattedBalance: '0.500',
-     priceUpdate: '+27.600'
-   }
+     priceUpdate: '+27.600',
+   },
  }
 
- render () {
-   const {account, className, styles} = this.props
+ render() {
+   const { account, className, styles } = this.props;
 
    return (
      <div className={className}>
@@ -27,8 +27,8 @@ class Balance extends Component {
        <div className={styles.balance}>{account.formattedBalance}</div>
        <div className={styles.change}>{account.priceUpdate}</div>
      </div>
-   )
+   );
  }
 }
 
-export default Balance
+export default Balance;

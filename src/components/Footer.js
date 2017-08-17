@@ -1,13 +1,13 @@
-import React, {Component} from 'react'
-import Link from './Link'
+import React, { Component } from 'react';
+import Link from './Link';
 
 class Footer extends Component {
  static defaultProps = {
-   className: 'Nav row no-gutters items-center space-between'
+   className: 'Nav row no-gutters items-center space-between',
  }
 
- render () {
-   const {className} = this.props
+ render() {
+   const { className } = this.props;
 
    return (
      <footer className={className}>
@@ -18,8 +18,8 @@ class Footer extends Component {
          <Link to="/terms">Terms of Service</Link>
        </div>
      </footer>
-   )
+   );
  }
 }
 
-export default Footer
+export default Footer;

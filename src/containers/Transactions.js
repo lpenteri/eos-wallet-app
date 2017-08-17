@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import {observer} from 'mobx-react'
-import {List, Icon} from '../components'
-import TransactionsQuery from '../query/transactions'
+import React, { Component } from 'react';
+import { observer } from 'mobx-react';
+import { List, Icon } from '../components';
+import TransactionsQuery from '../query/transactions';
 
 const Transaction = ({ date, sender, memo, amount }) => (
   <div className="transaction d-flex flex-row">
@@ -26,34 +26,34 @@ const Transaction = ({ date, sender, memo, amount }) => (
       <p className="transaction-amount">{amount}</p>
     </div>
   </div>
-)
+);
 
 class Transactions extends Component {
  static defaultProps = {
-   data: TransactionsQuery
+   data: TransactionsQuery,
  }
 
- dataTransform (data) {
-   return data.map(item => {
-     const date = new Date(item.date)
+ dataTransform(data) {
+   return data.map((item) => {
+     const date = new Date(item.date);
      item.date = {
        month: date.toLocaleString('en-US', { month: 'long' }).substr(0, 3),
-       day: date.getDay()
-     }
-     return item
-   })
+       day: date.getDay(),
+     };
+     return item;
+   });
  }
 
- render () {
-   const {data} = this.props
+ render() {
+   const { data } = this.props;
 
    return (
      <List
        data={this.dataTransform(data)}
        renderItem={Transaction}
      />
-   )
+   );
  }
 }
 
-export default Transactions
+export default Transactions;

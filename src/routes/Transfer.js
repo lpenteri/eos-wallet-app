@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import {TransferForm} from '../components'
-import {Transactions} from '../containers'
+import React, { Component } from 'react';
+import { TransferForm } from '../components';
+import { Transactions } from '../containers';
 
 class Transfer extends Component {
-  render () {
+  render() {
     return (
       <div>
         <div className="container-full">
@@ -39,8 +39,8 @@ class Transfer extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Transfer
+export default Transfer;
