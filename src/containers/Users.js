@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {Icon, Link, List} from '../components'
+import UsersQuery from '../query/users'
 import {observer} from 'mobx-react'
-import List from '../components/List'
-import Icon from '../components/Icon'
 
-const User = ({ url, name, status }) => (
+const User = ({ url, name, status, icon, }) => (
 	<Link to={url}>
-		<Icon />
+		<Icon className="transaction-thumbnail" url={icon} />
 		<div>
 			<p>{name}</p>
 			<p>{status}</p>
@@ -15,6 +14,10 @@ const User = ({ url, name, status }) => (
 )
 
 class Users extends Component {
+  static defaultProps = {
+    data: UsersQuery()
+  }
+
 	render() {
 		const {data} = this.props
 
