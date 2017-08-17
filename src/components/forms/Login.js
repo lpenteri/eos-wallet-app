@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import mutation
 
 class Login extends Component {
+<<<<<<< HEAD
   constructor(props, context) {
     super(props, context);
 
@@ -55,12 +56,27 @@ class Login extends Component {
             value={password}
           />
         </fieldset>
+=======
+	render() {
+		return (
+			<form>
+				<fieldset>
+					<label>Username/label>
+					<input type="text" />
+				</fieldset>
+
+				<fieldset>
+					<label>Password</label>
+					<input type="text" />
+				</fieldset>
+>>>>>>> Revert "Update forms"
 
         <fieldset>
           <label htmlFor="keepLoggedIn">Keep me logged in</label>
           <input name="keepLoggedIn" type="checkbox" />
         </fieldset>
 
+<<<<<<< HEAD
         <button
           className="btn btn-primary btn-lg"
           type="submit"
@@ -69,6 +85,12 @@ class Login extends Component {
       </form>
     );
   }
+=======
+				<button type="submit">Login</button>
+			</form>
+		)
+	}
+>>>>>>> Revert "Update forms"
 }
 
 export default Login;

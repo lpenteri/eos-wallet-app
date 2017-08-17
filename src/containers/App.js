@@ -5,6 +5,7 @@ import {
   Footer,
   Navbar } from '../components';
 import {
+<<<<<<< HEAD
   About,
   Faqs,
   NoMatch,
@@ -14,6 +15,18 @@ import {
   TransactionHistory,
   Transfer,
   Users } from '../routes';
+=======
+	About,
+	Faqs,
+	Home,
+	NoMatch,
+	Permissions,
+	Preferences,
+	Profile,
+	TransactionHistory,
+	Transfer,
+	Users} from '../routes'
+>>>>>>> Revert "Update forms"
 
 const Scene = ({
   children,
@@ -35,6 +48,7 @@ class App extends Component {
   render() {
     const { className } = this.props;
 
+<<<<<<< HEAD
     return (
       <main className={className}>
         <Header />
@@ -88,6 +102,28 @@ class App extends Component {
       </main>
     );
   }
+=======
+		return (
+			<main className={className}>
+				<Header />
+				<Navbar />
+				<Scene>
+					<Route exact path="/" component={Home} />
+					<Route path="/transfer" component={Transfer} />
+					<Route path="/transactions" component={TransactionHistory} />
+					<Route path="/permissions" component={Permissions} />
+					<Route path="/user/:id" component={Profile} />
+					<Route path="/about" component={About} />
+					<Route path="/faqs" component={Faqs} />
+					<Route path="/users" component={Users} />
+					<Route path="/preferences" component={Preferences} />
+					<Route path="*" component={NoMatch} />
+					<Footer />
+				</Scene>
+			</main>
+		)
+	}
+>>>>>>> Revert "Update forms"
 }
 
 export default App;
