@@ -17,36 +17,38 @@
     list-style-type: none;
     li {
       background-color: $bg-grey-60;
+      padding: .75rem 1.5rem;
       @include border-radius(12px);
-      padding: .75em 1.5em;
       &:nth-child(even) {
         background-color: transparent;
       }
     }
   }
+  
   .section:not(:first-child) {
-    margin-top: 50px;
+    margin-top: 3rem;
   }
 
   .module {
     background-color: $bg-grey-60;
-    @include border-radius(12px);
     width: 100%;
-    padding: 1em;
-    margin-bottom: 2em;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    @include border-radius(12px);
     p {
       margin-bottom: 0;
       font-size: 90%;
       font-weight: 200;
-      line-height: 1.75em;
+      line-height: 1.5rem;
     }
   }
+  
   .form-text {
     float: right;
   }
 
   input[type="text"].prefix {
-    padding-left: 75px;
+    padding-left: 4.5rem;
   }
 
   .input-prefix {
@@ -55,7 +57,7 @@
       content: "@";
       color: $dark-grey;
       text-align: center;
-      line-height: 49px;
+      line-height: 3rem;
       font-size: 110%;
       position: absolute;
       left: 1px;
@@ -66,13 +68,14 @@
       @include border-radius(0.25rem 0 0 0.25rem);
     }
   }
+  
   .module-search {
     position: relative;
     input {
       width: 250px;
       height: 30px;
+      padding-left: 2.5rem;
       @include border-radius(15px);
-      padding-left: 40px;
     }
     &:before {
       font-family: 'icomoon' !important;
@@ -84,8 +87,9 @@
       font-size: 90%;
     }
   }
+  
   .export {
-    margin-right: 10px;
+    margin-right: .5rem;
     color: $blue;
     &:before {
       font-size: 140%;
