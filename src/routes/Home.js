@@ -16,12 +16,14 @@ class Home extends Component {
                                 <p>Move funds to another EOS account.</p>
                                 <div className="form-group">
                                     <label for="to">To</label>
-                                    <input type="text" className="form-control form-control-lg" id="to" aria-describedby="to"></input>
+                                    <div className="input-prefix">
+                                        <input type="text" className="form-control form-control-lg prefix" id="to" aria-describedby="to"></input>
+                                    </div>
                                 </div>
                                 <div className="form-group">
                                     <label for="amount">Amount</label>
-                                    <input type="text" className="form-control form-control-lg" id="amount" aria-describedby="amount"></input>
                                     <small className="form-text text-muted"><a>Balance: 0.000 EOS</a></small>
+                                    <input type="text" className="form-control form-control-lg" id="amount" aria-describedby="amount"></input>
                                 </div>
                                 <div className="form-group">
                                     <label for="memo">Email address</label>
