@@ -6,6 +6,7 @@
   "parser": "babel-eslint",
   "rules": {
     "strict": 0,
-    "comma-daggle": 0
+    "comma-daggle": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }
