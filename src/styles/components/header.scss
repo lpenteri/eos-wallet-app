@@ -1,13 +1,28 @@
 .header {
   background: $bg-grey-100;
   overflow: hidden;
-  padding: 1.25rem;
   height: 90px;
   position: relative;
   overflow: visible;
   width: 100%;
+  @media (max-width: 767px) {
+    height: 50px;
+  }
+  .mobile-nav {
+    background-color: $blue;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    span {
+      line-height: 50px;
+      font-size: 130%;
+    }
+  }
   .logo {
     height: 55px;
+    @media (max-width: 767px) {
+      height: 30px;
+    }
   }
   .meta {
     position: absolute;
@@ -29,11 +44,20 @@
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
+    @media (max-width: 767px) {
+      top: -8px;
+      right: .5rem;
+    }
     .user-thumbnail {
       width: 100px;
       height: 100px;
       border: 8px solid $orange;
       @include border-radius(50px);
+      @media (max-width: 767px) {
+        width: 70px;
+        height: 70px;
+        border: 5px solid $orange;
+      }
     }
     .settings {
       position: absolute;
@@ -44,12 +68,22 @@
       border: 5px solid $blue;
       background-color: white;
       @include border-radius(15px);
+      @media (max-width: 767px) {
+        width: 24px;
+        height: 24px;
+        border: 3px solid $blue;
+        top: 45px;
+        left: -2px;
+      }
       &:before {
         color: $bg-grey-100;
         position: absolute;
         font-size: 90%;
         left: 3px;
         top: 3px;
+        @media (max-width: 767px) {
+          font-size: 75%;
+        }
       }
     }
   }
