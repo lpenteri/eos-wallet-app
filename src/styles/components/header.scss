@@ -42,8 +42,8 @@
   }
   .thumbnail {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 1rem;
+    right: 1.5rem;
     @media (max-width: 767px) {
       top: -8px;
       right: .5rem;
@@ -61,8 +61,8 @@
     }
     .settings {
       position: absolute;
-      top: 54px;
-      left: -15px;
+      top: 58px;
+      left: -5px;
       width: 30px;
       height: 30px;
       border: 5px solid $blue;
