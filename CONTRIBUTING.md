@@ -22,10 +22,10 @@ Every contribution to the project starts with a Trello card that's on the board.
 
 *Please keep in mind:*
 
-  * If you take ownership of a Trello card, be sure to link the PR associated with it
-  * Please request at least one reviewer on your PR before merging
-  * All dependencies and techniques demonstrated in this demo app should remain uniquely familiar and simple to a broad audience
-  * Again, we are not using Github issues
+    * If you take ownership of a Trello card, be sure to link the PR associated with it
+    * Please request at least one reviewer on your PR before merging
+    * All dependencies and techniques demonstrated in this demo app should remain uniquely familiar and simple to a broad audience
+    * Again, we are not using Github issues
 
 ## JavaScript style
 
