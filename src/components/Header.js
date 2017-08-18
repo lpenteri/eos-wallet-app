@@ -12,7 +12,7 @@ class Header extends Component {
     return (
       <header className={className}>
         <div className="mobile-nav mr-2 hidden-md-up">
-          <span className="icon-eos_icons_menu"></span>
+          <span className="icon-eos_icons_menu" />
         </div>
         <img
           alt=""
