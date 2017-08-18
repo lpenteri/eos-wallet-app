@@ -1,0 +1,21 @@
+.ReactModal__Overlay {
+  background-color: rgba($bg-grey-60,0.9) !important;
+}
+
+.ReactModal__Content {
+  background-color: $bg-grey-80 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  .modal-header {
+    background-color: $orange;
+    padding: 1.5rem 2rem;
+    border-bottom: 0;
+  }
+  .modal-body {
+    padding: 2rem;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+}

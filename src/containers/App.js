@@ -88,7 +88,7 @@ class App extends Component {
           </Scene>
         </div>
         <Modal
-          isOpen={isOpen}
+          isOpen
         >
           <Login />
         </Modal>
