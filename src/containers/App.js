@@ -14,6 +14,8 @@ import {
   TransactionHistory,
   Transfer,
   Users } from '../routes';
+import Modal from 'react-modal';
+import { Login } from './Login';
 
 const Scene = ({
   children,
@@ -85,6 +87,11 @@ class App extends Component {
             <Footer />
           </Scene>
         </div>
+        <Modal
+          isOpen={false}
+        >
+          <Login />
+        </Modal>
       </main>
     );
   }
