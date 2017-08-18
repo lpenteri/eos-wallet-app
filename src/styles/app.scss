@@ -53,28 +53,6 @@
   .form-text {
     float: right;
   }
-
-  input[type="text"].prefix {
-    padding-left: 4.5rem;
-  }
-
-  .input-prefix {
-    position: relative;
-    &:before {
-      content: "@";
-      color: $dark-grey;
-      text-align: center;
-      line-height: 3.25rem;
-      font-size: 110%;
-      position: absolute;
-      left: 1px;
-      top: 1px;
-      width: 50px;
-      height: 52px;
-      background-color: $light-grey;
-      @include border-radius(0.25rem 0 0 0.25rem);
-    }
-  }
   
   .module-search {
     position: relative;
@@ -103,3 +81,32 @@
     }
   }
 }
+
+.text-link {
+  color: $blue;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input[type="text"].prefix {
+    padding-left: 4.5rem;
+  }
+
+  .input-prefix {
+    position: relative;
+    &:before {
+      content: "@";
+      color: $dark-grey;
+      text-align: center;
+      line-height: 3.25rem;
+      font-size: 110%;
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      width: 50px;
+      height: 52px;
+      background-color: $light-grey;
+      @include border-radius(0.25rem 0 0 0.25rem);
+    }
+  }

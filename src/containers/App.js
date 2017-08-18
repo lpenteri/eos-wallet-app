@@ -14,6 +14,8 @@ import {
   TransactionHistory,
   Transfer,
   Users } from '../routes';
+import Modal from 'react-modal';
+import Login from './Login';
 
 const Scene = ({
   children,
@@ -33,7 +35,7 @@ class App extends Component {
   }
 
   render() {
-    const { className } = this.props;
+    const { className, isOpen } = this.props;
 
     return (
       <main className={className}>
@@ -85,6 +87,11 @@ class App extends Component {
             <Footer />
           </Scene>
         </div>
+        <Modal
+          isOpen
+        >
+          <Login />
+        </Modal>
       </main>
     );
   }
