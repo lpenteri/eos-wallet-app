@@ -15,7 +15,7 @@ import {
   Transfer,
   Users } from '../routes';
 import Modal from 'react-modal';
-import { Login } from './Login';
+import Login from './Login';
 
 const Scene = ({
   children,
