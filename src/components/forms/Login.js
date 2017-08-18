@@ -35,7 +35,6 @@ class Login extends Component {
             name="password"
             required
             type="text"
-            value={password}
           />
         </fieldset>
 

@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   render() {
-    const { className } = this.props;
+    const { className, isOpen } = this.props;
 
     return (
       <main className={className}>
@@ -88,7 +88,7 @@ class App extends Component {
           </Scene>
         </div>
         <Modal
-          isOpen={false}
+          isOpen={isOpen}
         >
           <Login />
         </Modal>
