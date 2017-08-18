@@ -2,6 +2,8 @@
 
 :+1::tada: Thanks for taking the time to contribute! :tada::+1:
 
+Please take the time to read everything below.
+
 ## Discussions
 
 All discussions take place on our Slack channel, as noted below:
@@ -18,7 +20,7 @@ We are deprecating the use of Github issues in favor of Trello. If you find an i
 
 ## Your first contribution
 
-Every contribution to the project starts with a Trello card that's on the board. _Any discussion around an issue or enhancement must be itemized in the form of Trello cards before any work takes place. Not every card will be available to use._
+Every contribution to the project starts with a Trello card that's on the board. _Any discussion around an issue or enhancement must be itemized in the form of Trello cards before any work takes place. Not every card will be available to work on._
 
 *Please keep in mind:*
 
