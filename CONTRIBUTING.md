@@ -18,7 +18,7 @@ We are deprecating the use of Github issues in favor of Trello. If you find an i
 
 ## Your first contribution
 
-Every contribution to the project starts with a Trello card that's on the board. Any discussion around an issue or enhancement must be itemized in the form of Trello cards before any work takes place. Not every card will be available to use.
+Every contribution to the project starts with a Trello card that's on the board. _Any discussion around an issue or enhancement must be itemized in the form of Trello cards before any work takes place. Not every card will be available to use._
 
 *Please keep in mind:*
 
@@ -29,7 +29,7 @@ Every contribution to the project starts with a Trello card that's on the board.
 
 ## JavaScript style
 
-Our JavaScript is formatted in the [JavaScript standard style](https://github.com/standard/standard).
+Our JavaScript is formatted in the [AirBnB JS style](https://github.com/airbnb/javascript).
 
 ## CSS style
 
