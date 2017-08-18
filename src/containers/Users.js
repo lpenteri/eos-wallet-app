@@ -6,7 +6,7 @@ import { observer } from 'mobx-react';
 const User = ({ url, name, status, icon }) => (
   <div className="user transaction">
     <Link to={url}>
-      <div className="user-meta d-flex flex-row">
+      <div className="user-meta d-flex flex-row items-center">
         <Icon
           className="transaction-thumbnail"
           url={icon}
