@@ -2675,10 +2675,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-image: none;
 }
 
-.btn:not(:first-of-type) {
-    margin-left: 1em;
-}
-
 a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
