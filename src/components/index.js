@@ -8,3 +8,4 @@ export { default as LoginForm } from './forms/Login';
 export { default as Navbar } from './Navbar';
 export { default as ResetPasswordForm } from './forms/ResetPassword';
 export { default as TransferForm } from './forms/Transfer';
+export { default as PreferencesForm } from './forms/Preferences';
