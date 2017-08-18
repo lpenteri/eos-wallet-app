@@ -28,6 +28,7 @@
     "react/forbid-component-props": 1,
     "react/no-set-state": 0,
     "react/no-unused-state": 0,
-    "react/jsx-no-bind": 1
+    "react/jsx-no-bind": 1,
+    "react/no-unescaped-entities": 1
   }
 }
