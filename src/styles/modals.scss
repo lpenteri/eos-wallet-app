@@ -7,6 +7,9 @@
   border-radius: 0 !important;
   padding: 0 !important;
   border: 0 !important;
+  max-width: 500px;
+  bottom: auto !important;
+  margin: 0 auto;
   .modal-header {
     background-color: $orange;
     padding: 1.5rem 2rem;
@@ -17,5 +20,21 @@
   }
   h2 {
     margin-bottom: 0;
+  }
+  .modal-cta {
+    background-color: $bg-grey-100;
+    margin: 0 -2rem -2rem -2rem;
+    padding: 2rem;
+  }
+  .js-modal-close {
+    padding: 0;
+    visibility: hidden;
+    &:after {
+      font-family: 'icomoon';
+      content: "\e90a";
+      font-size: 150%;
+      color: white;
+      visibility: visible;
+    }
   }
 }
