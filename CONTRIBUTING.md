@@ -27,6 +27,12 @@ Every contribution to the project starts with a Trello card that's on the board.
   * All dependencies and techniques demonstrated in this demo app should remain uniquely familiar and simple to a broad audience
   * Again, we are not using Github issues
 
+## Releases :point_left: !important
+
+Make sure you are base your branch from develop! We only merge develop into master when we are releasing code releases.
+
+![](https://user-images.githubusercontent.com/1743355/29464834-cf9a291c-83fc-11e7-9d98-0434fb1aab27.png)
+
 ## JavaScript style
 
 Our JavaScript is formatted in the [AirBnB JS style](https://github.com/airbnb/javascript).
