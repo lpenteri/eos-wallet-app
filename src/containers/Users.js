@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Icon, Link, List } from '../components';
+import { Icon, List } from '../components';
+import { Link } from 'react-router-dom';
 import UsersQuery from '../query/users';
 import { observer } from 'mobx-react';
 
