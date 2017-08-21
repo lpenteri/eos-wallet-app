@@ -6,7 +6,6 @@ import {
   Footer,
   Navbar } from '../components';
 import {
-<<<<<<< HEAD
   About,
   Faqs,
   NoMatch,
@@ -39,10 +38,10 @@ class App extends Component {
   render() {
     const { className, isOpen } = this.props;
 
-<<<<<<< HEAD
     return (
       <main className={className}>
         <Helmet titleTemplate="%s | EOS Wallet" defaultTitle="EOS Wallet" />
+
         <Header />
         <div className="flex-fill">
           <Navbar />
@@ -91,31 +90,14 @@ class App extends Component {
             <Footer />
           </Scene>
         </div>
+        <Modal
+          isOpen={isOpen}
+        >
+          <Login />
+        </Modal>
       </main>
     );
   }
-=======
-		return (
-			<main className={className}>
-				<Header />
-				<Navbar />
-				<Scene>
-					<Route exact path="/" component={Home} />
-					<Route path="/transfer" component={Transfer} />
-					<Route path="/transactions" component={TransactionHistory} />
-					<Route path="/permissions" component={Permissions} />
-					<Route path="/user/:id" component={Profile} />
-					<Route path="/about" component={About} />
-					<Route path="/faqs" component={Faqs} />
-					<Route path="/users" component={Users} />
-					<Route path="/preferences" component={Preferences} />
-					<Route path="*" component={NoMatch} />
-					<Footer />
-				</Scene>
-			</main>
-		)
-	}
->>>>>>> Revert "Update forms"
 }
 
 export default App;
