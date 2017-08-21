@@ -49,7 +49,7 @@ class Navbar extends Component {
    links: [
      { to: '/users', text: 'Users' },
      { to: '/about', text: 'About' },
-     { to: '/faq', text: 'FAQ' },
+     { to: '/faqs', text: 'FAQs' },
    ],
  }
 

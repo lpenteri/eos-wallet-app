@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
+import { Helmet } from 'react-helmet';
 import {
   Header,
   Footer,
@@ -39,6 +40,7 @@ class App extends Component {
 
     return (
       <main className={className}>
+        <Helmet titleTemplate="%s | EOS Wallet" defaultTitle="EOS Wallet" />
         <Header />
         <div className="flex-fill">
           <Navbar />

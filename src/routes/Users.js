@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Users as UsersContainer } from '../containers';
+import { Helmet } from 'react-helmet';
 
 class Users extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Users</title>
+        </Helmet>
         <div className="container-full">
           <div className="d-flex justify-content-end">
             <div className="mr-auto align-self-center">
