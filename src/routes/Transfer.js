@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { TransferForm } from '../components';
 import { Transactions } from '../containers';
+import { Helmet } from 'react-helmet';
 
 class Transfer extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+        <title>Transfer</title>
+      </Helmet>
         <div className="container-full">
           <div className="row">
             <div className="col-12">

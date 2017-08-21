@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Transactions from '../containers/Transactions';
+import { Helmet } from 'react-helmet';
 
 class TransactionHistory extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Transaction History</title>
+        </Helmet>
         <div className="container-full">
           <div className="d-flex justify-content-end">
             <div className="mr-auto align-self-center">
