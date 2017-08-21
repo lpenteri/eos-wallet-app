@@ -88,7 +88,7 @@ class TransferForm extends Component {
            value={memo}
          />
        </fieldset>
-       
+
        <div className="row col-12 no-gutters p-0">
          <div className="col-sm-auto col-6 pl-0 pr-2">
            <button

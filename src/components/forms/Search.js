@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import mutation
 
 class SearchForm extends Component {
+<<<<<<< HEAD
   render() {
     return (
       <form>
@@ -18,6 +19,17 @@ class SearchForm extends Component {
       </form>
     );
   }
+=======
+	render() {
+		return (
+			<form>
+				<fieldset>
+					<input type="text" />
+				</fieldset>
+			</form>
+		)
+	}
+>>>>>>> Revert "Update forms"
 }
 
 export default SearchForm;

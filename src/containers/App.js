@@ -41,6 +41,7 @@ class App extends Component {
     return (
       <main className={className}>
         <Helmet titleTemplate="%s | EOS Wallet" defaultTitle="EOS Wallet" />
+
         <Header />
         <div className="flex-fill">
           <Navbar />
@@ -89,6 +90,11 @@ class App extends Component {
             <Footer />
           </Scene>
         </div>
+        <Modal
+          isOpen={isOpen}
+        >
+          <Login />
+        </Modal>
       </main>
     );
   }
