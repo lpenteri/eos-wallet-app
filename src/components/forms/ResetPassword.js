@@ -32,7 +32,7 @@ class ResetPassword extends Component {
         <button
           className="btn btn-primary btn-lg"
           type="submit"
-        >Submit
+        >Update Password
         </button>
       </form>
     );

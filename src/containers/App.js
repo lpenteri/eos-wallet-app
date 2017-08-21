@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
+import { Helmet } from 'react-helmet';
 import {
   Header,
   Footer,
@@ -15,18 +16,8 @@ import {
   TransactionHistory,
   Transfer,
   Users } from '../routes';
-=======
-	About,
-	Faqs,
-	Home,
-	NoMatch,
-	Permissions,
-	Preferences,
-	Profile,
-	TransactionHistory,
-	Transfer,
-	Users} from '../routes'
->>>>>>> Revert "Update forms"
+import Modal from 'react-modal';
+import Login from './Login';
 
 const Scene = ({
   children,
@@ -46,11 +37,12 @@ class App extends Component {
   }
 
   render() {
-    const { className } = this.props;
+    const { className, isOpen } = this.props;
 
 <<<<<<< HEAD
     return (
       <main className={className}>
+        <Helmet titleTemplate="%s | EOS Wallet" defaultTitle="EOS Wallet" />
         <Header />
         <div className="flex-fill">
           <Navbar />
