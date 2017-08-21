@@ -1,0 +1,31 @@
+{
+  "extends": ["plugin:react/all", "airbnb"],
+  "plugins": [
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "comma-daggle": 0,
+    "sort-imports": 0,
+    "import/first": 0,
+    "import/no-extraneous-dependencies": 1,
+    "class-methods-use-this": 0,
+    "no-param-reassign": 1,
+    "max-len": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/require-optimization": 1,
+    "react/prefer-stateless-function": 1,
+    "react/jsx-no-literals": 0,
+    "react/prop-types": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/no-multi-comp": 1,
+    "react/forbid-component-props": 1,
+    "react/no-set-state": 0,
+    "react/no-unused-state": 0,
+    "react/jsx-no-bind": 1
+  }
+}

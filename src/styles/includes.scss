@@ -5,6 +5,9 @@
 @import 'app';
 @import 'flex';
 @import 'fonts';
-@import 'header';
-@import 'navigation';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/navbar';
+@import 'components/transaction';
+@import 'components/users';
 @import 'typography';
