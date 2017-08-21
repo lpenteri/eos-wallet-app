@@ -89,11 +89,6 @@ class App extends Component {
             <Footer />
           </Scene>
         </div>
-        <Modal
-          isOpen
-        >
-          <Login />
-        </Modal>
       </main>
     );
   }
