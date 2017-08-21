@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Route, Switch } from 'react-router';
+import { Helmet } from 'react-helmet';
 import {
   Header,
   Footer,
@@ -67,8 +68,6 @@ class App extends Component {
     const { className, location, modalRoutes } = this.props;
     const isModal = modalRoutes.some(r => new RegExp(r).test(location.pathname));
 
-    console.log(this.previousLocation, location);
-
     return (
       <main className={className}>
         <Helmet titleTemplate="%s | EOS Wallet" defaultTitle="EOS Wallet" />
@@ -132,18 +131,7 @@ class App extends Component {
               component={CreateAccount}
               path="/create-account"
             />
-<<<<<<< HEAD
-            <Footer />
-          </Scene>
-        </div>
-        <Modal
-          isOpen={isOpen}
-        >
-          <Login />
-        </Modal>
-=======
           </Modal> : null}
->>>>>>> Update <App /> routes, Add Progress, CreateAccount and forms
       </main>
     );
   }
