@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { PreferencesForm } from '../components';
+import { Helmet } from 'react-helmet';
+
 
 class Preferences extends Component {
   render() {
     return (
       <div className="profile">
+        <Helmet>
+          <title>Preferences</title>
+        </Helmet>
         <div className="row">
           <div className="col-12">
             <h2>Preferences</h2>

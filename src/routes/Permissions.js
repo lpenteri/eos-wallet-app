@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { ResetPasswordForm } from '../components';
+import { Helmet } from 'react-helmet';
 
 class Permissions extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Permissions</title>
+        </Helmet>
         <h2>Permissions</h2>
         <div className="section">
           <h4>Keystore</h4>

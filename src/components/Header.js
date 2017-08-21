@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { User } from '../containers';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   static defaultProps = {
@@ -14,11 +15,14 @@ class Header extends Component {
         <div className="mobile-nav mr-2 hidden-md-up">
           <span className="icon-eos_icons_menu" />
         </div>
-        <img
-          alt=""
-          className="logo"
-          src="images/logo.svg"
-        />
+        <Link to="/">
+          <img
+            alt=""
+            className="logo"
+            src="images/logo.svg"
+          />
+        </Link>
+
         <User />
       </header>
     );
