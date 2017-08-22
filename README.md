@@ -2,6 +2,8 @@
 
 An example app for the EOS platform.
 
+![](http://imgur.com/a/s0uNH)
+
 ## Get started
 
 * Install all dependencies via `yarn` (preferably) or `npm i`
