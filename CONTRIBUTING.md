@@ -10,7 +10,7 @@ The core team for this project works on Github, however we may be split other fo
 
 ### `master` is safe
 
-Master is the release version of the site and should remain free of any work in progress. We are considering individual release branches.
+Master is the release version of the site and should remain free of any work in progress. We are considering individual release branches. This also means that master is out of date with work that is currently happening, `develop` is our branch for ongoing work.
 
 ## Your first contribution
 
