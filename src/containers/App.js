@@ -54,6 +54,7 @@ class App extends Component {
 
   componentWillUpdate(nextProps) {
     const { location } = this.props;
+
     // set previousLocation if props.location is not modal
     if (
       nextProps.history.action !== 'POP' &&
@@ -66,6 +67,8 @@ class App extends Component {
   render() {
     const { className, location, modalRoutes } = this.props;
     const isModal = modalRoutes.some(r => new RegExp(r).test(location.pathname));
+
+    location.state = { modal: isModal };
 
     return (
       <main className={className}>
