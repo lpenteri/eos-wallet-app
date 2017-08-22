@@ -13,6 +13,7 @@ All discussions take place on our Slack channel, as noted below:
 * Use the `dev-eos-wallet` channel to discuss all concerns around this project
 * The `project-eos-wallet` channel is to monitor project updates, please refrain from posting here
 * Generally any decisions about the design of the project will be documented, check Trello or look for pinned items in the Slack channel
+* If there's any concerns, reach out to the committer or post on the `dev-eos-wallet` channel
 
 ## Reporting Bugs
 
@@ -20,20 +21,24 @@ We are deprecating the use of Github issues in favor of Trello. If you find an i
 
 ## Your first contribution
 
-Every contribution to the project starts with a Trello card that's on the board. _Any discussion around an issue or enhancement must be itemized in the form of Trello cards before any work takes place. Not every card will be available to work on._
+Every contribution to the project starts with a Trello card that's on the board. __Any discussion around an issue or enhancement must be itemized in the form of Trello cards before any work takes place. Not every card will be available to work on, also check to ensure the card does not have an owner before starting a task.__
 
 *Please keep in mind:*
 
-    * If you take ownership of a Trello card, be sure to link the PR associated with it
-    * Please request at least one reviewer on your PR before merging
-    * All dependencies and techniques demonstrated in this demo app should remain uniquely familiar and simple to a broad audience
-    * Again, we are not using Github issues
+* Please request at least one reviewer on your PR before merging
+* All dependencies and techniques demonstrated in this demo app should remain uniquely familiar and simple to a broad audience
+* If you take ownership of a Trello card, please be sure to reference the associated PR
+* You are responsible for your PR, that means all conflicts, feedback, etc., must be resolved by the PR's before merging
+* Due to CI not yet being set up, tests will not catch git artifacts, etc., ensure your code is properly running before merging.
+* Again, we are not using Github issues
 
 ## Releases :point_left: !important
 
-Make sure you are base your branch from develop! We only merge develop into master when we are releasing code releases.
+:warning: Make sure you base your branch from develop! We only merge develop into master when we are doing releases.
 
 ![](https://user-images.githubusercontent.com/1743355/29464834-cf9a291c-83fc-11e7-9d98-0434fb1aab27.png)
+
+**NOTE** CI is not set up yet, so we do not deploy to a particular location, nor enforce passing tests before running.
 
 ## JavaScript style
 
@@ -41,5 +46,5 @@ Our JavaScript is formatted in the [AirBnB JS style](https://github.com/airbnb/j
 
 ## CSS style
 
-Our CSS style is in [AirBnB styleguide](https://github.com/airbnb/css).
+Our CSS style is in [AirBnB CSS styleguide](https://github.com/airbnb/css).
 
