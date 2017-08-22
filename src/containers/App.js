@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
 import { Route, Switch } from 'react-router';
 import { Helmet } from 'react-helmet';
 import {
