@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router';
+import { Route, Redirect, Switch } from 'react-router';
 import { Helmet } from 'react-helmet';
 import {
   Header,
@@ -46,7 +46,7 @@ class App extends Component {
     super(props, context);
 
     this.previousLocation = {
-      pathname: '/',
+      pathname: '/about',
       hash: '',
       search: '',
     };
@@ -74,8 +74,8 @@ class App extends Component {
         <Header />
         <div className="flex-fill">
           <Navbar />
-          <Switch location={isModal ? this.previousLocation : location}>
-            <Scene>
+          <Scene>
+            <Switch location={isModal ? this.previousLocation : location}>
               <Route
                 component={Transfer}
                 exact
@@ -112,11 +112,11 @@ class App extends Component {
               <Route
                 component={NoMatch}
               />
-
-              <Footer />
-            </Scene>
-          </Switch>
+            </Switch>
+            <Footer />
+          </Scene>
         </div>
+
         {isModal ?
           <Modal
             isOpen
