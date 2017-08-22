@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Redirect, Switch } from 'react-router';
+import { Route, Switch } from 'react-router';
 import { Helmet } from 'react-helmet';
 import {
   Header,
