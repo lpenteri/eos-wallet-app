@@ -7,7 +7,7 @@ import {
   Navbar } from '../components';
 import {
   About,
-  Faqs,
+  Faq,
   NoMatch,
   Permissions,
   Preferences,
@@ -98,8 +98,8 @@ class App extends Component {
                 path="/about"
               />
               <Route
-                component={Faqs}
-                path="/faqs"
+                component={Faq}
+                path="/faq"
               />
               <Route
                 component={Users}
