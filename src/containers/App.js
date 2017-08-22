@@ -33,13 +33,14 @@ const Scene = ({
   </div>
 );
 
+const modalRoutes = Object.freeze([
+  '/create-account',
+  '/login',
+]);
+
 class App extends Component {
   static defaultProps = {
     className: 'app container-fluid p-0 row no-gutters d-flex',
-    modalRoutes: [
-      '/create-account',
-      '/login',
-    ],
   }
 
   constructor(props, context) {
@@ -65,7 +66,7 @@ class App extends Component {
   }
 
   render() {
-    const { className, location, modalRoutes } = this.props;
+    const { className, location } = this.props;
     const isModal = modalRoutes.some(r => new RegExp(r).test(location.pathname));
 
     location.state = { modal: isModal };
