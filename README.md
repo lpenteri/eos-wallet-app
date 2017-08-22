@@ -1,6 +1,6 @@
-# Example EOS wallet app
+# eos-wallet-app
 
-An example app for the EOS platform.
+An example app for the EOS blockchain platform.
 
 ![](http://i.imgur.com/wm9j5j5.png)
 
@@ -35,3 +35,7 @@ To view the project, these are the routes below. Note that you do not need to be
 ## Make a contribution
 
 Please check out our [contributing guidelines](./CONTRIBUTING.md).
+
+### License
+
+Currently this repo has no licensing, we look clarify this in the future.
