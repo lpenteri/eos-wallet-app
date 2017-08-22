@@ -2,12 +2,23 @@
 
 An example app for the EOS blockchain platform.
 
+### Features
+
+* View past transactions
+* Make transfers to other users
+* Update account permissions
+* View your profile and profiles of other users
+
 ![](http://i.imgur.com/wm9j5j5.png)
 
 ## Get started
 
 * Install all dependencies via `yarn` (preferably) or `npm i`
 * Start project via `npm start`
+
+## Get help
+
+For core contributors, help is always available on our `dev-eos-wallet` [Slack channel](https://tandemly.slack.com).
 
 ## View the project
 
