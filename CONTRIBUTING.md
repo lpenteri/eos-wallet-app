@@ -68,7 +68,7 @@ All discussion takes place on our [Slack channel](https://tandemly.slack.com).
 
 ## Reporting Bugs
 
-We are deprecating the use of Github issues in favor of Trello. If you find an issue, post it to the [board](https://trello.com/c/X4P2y40U/12-api-layer).
+We are deprecating the use of Github issues in favor of Trello. If you find an issue, post it to the [board](https://trello.com/c/X4P2y40U/12-api-layer). Every issue should have a clear description, no matter how concise it may be. For images requesting UI changes or fixes, please be sure to include a screenshot.
 
 ## JavaScript style
 
