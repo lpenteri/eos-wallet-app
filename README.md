@@ -2,7 +2,7 @@
 
 An example app for the EOS platform.
 
-![](http://imgur.com/a/s0uNH)
+![](http://i.imgur.com/wm9j5j5.png)
 
 ## Get started
 
