@@ -37,7 +37,7 @@ _Before_ submitting a pull request, please make sure the following is done:
 * If you are working on an item, be sure your branch and ongoing work is visible (`git push` your new branches)
 * Again, we are not using Github issues
 
-## Documentation
+### Documentation
 
 ...is a work in progress. We are still in the process of developing the API. Any new developments may have accompanying documentation.
 
