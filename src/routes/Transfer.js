@@ -1,12 +1,15 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import { TransferForm } from '../components';
 import { Transactions } from '../containers';
+import { Helmet } from 'react-helmet';
 
 class Transfer extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+        <title>Transfer</title>
+      </Helmet>
         <div className="container-full">
           <div className="row">
             <div className="col-12">
@@ -14,7 +17,7 @@ class Transfer extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-7">
+            <div className="col-12 col-md-7">
               <div className="section">
                 <p>Move funds to another EOS account.</p>
                 <TransferForm />
@@ -23,7 +26,7 @@ class Transfer extends Component {
                 <Transactions />
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-12 col-md-5">
               <h5>What are EOS tokens?</h5>
               <div className="module">
                 <p>
@@ -45,24 +48,3 @@ class Transfer extends Component {
 }
 
 export default Transfer;
-=======
-import React, {Component} from 'react'
-import TransferForm from '../components/forms/Transfer'
-import Transactions from '../containers/Transactions'
-
-class Transfer extends Component {
-	render() {
-		return (
-			<div>
-				<h3>Transfer</h3>
-				<p>Move funds to another EOS account.</p>
-				<TransferForm />
-				<Transactions />	
-			</div>
-		)
-	}
-}
-
-export default Transfer
-
->>>>>>> Revert "Update forms"
